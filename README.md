@@ -1,4 +1,4 @@
-<h1>JavaScript Career</h1> <i>From Zero to Expert</i>
+<h1>JavaScript Career</h1> <i>From Zero to Expert</i> -
 <i>20|01|23</i>
 <p>I began my JS career</p>
 <h3>The Developer Tool</h3>

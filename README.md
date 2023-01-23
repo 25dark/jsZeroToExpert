@@ -7,3 +7,6 @@
 
 <h4>What is JavaScript</4>
 <p>is a high level object-oriented multi-paradign programming language</p>
+
+VALUE
+is a piece of data

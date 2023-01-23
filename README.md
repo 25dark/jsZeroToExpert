@@ -10,3 +10,13 @@
 
 VALUE
 is a piece of data
+
+Template Literals 
+eg const jonasNew = `I'm ${firstName}, a ${year - birthyear} year old ${job}!`;
+console.log(jonasNew);
+
+`using backticks for all strings isn't bad too`
+Creating a multi lines with backticks
+console.log(`string
+multiple
+lines`);

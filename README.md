@@ -20,3 +20,6 @@ Creating a multi lines with backticks
 console.log(`string
 multiple
 lines`);
+
+'use strict'
+use strict' is a directive that can be placed at the beginning of a JavaScript file or function. It indicates that the code should be executed in "strict mode," which changes some of JavaScript's default behavior in order to provide better error checking and prevent common mistakes. For example, using 'use strict' will prevent variables from being automatically created in the global scope, and will throw errors when attempting to use a variable that has not been declared. Overall, 'use strict' helps to make JavaScript code more reliable and secure.

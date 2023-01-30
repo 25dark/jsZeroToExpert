@@ -23,3 +23,21 @@ lines`);
 
 'use strict'
 use strict' is a directive that can be placed at the beginning of a JavaScript file or function. It indicates that the code should be executed in "strict mode," which changes some of JavaScript's default behavior in order to provide better error checking and prevent common mistakes. For example, using 'use strict' will prevent variables from being automatically created in the global scope, and will throw errors when attempting to use a variable that has not been declared. Overall, 'use strict' helps to make JavaScript code more reliable and secure.
+
+FUNCTIONS
+
+Function declaration - can be used before it's declared
+
+function calcAge(birthYear) {
+    return 2037 - birthYear;
+}
+
+Function expression - essentially a function value stored in a variable
+
+const calcAge = function (birthYear) {
+    return 2037 - birthYear;
+};
+
+Arrow function - great for a quick one-line functions. Has no this keyword
+
+const calcAge = birthYear => 2037 - birthYear;

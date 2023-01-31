@@ -1,28 +1,28 @@
 //CODING CHALLENG
 
 // Store Mark's and John's mass and height in variables
-const markMass = 78;
-const markHeight = 1.69;
-const markMass2 = 95;
-const markHeight2 = 1.88;
+// const markMass = 78;
+// const markHeight = 1.69;
+// const markMass2 = 95;
+// const markHeight2 = 1.88;
 
 
-const johnMass = 92;
-const johnHeight = 1.95;
-const johnMass2 = 85;
-const johnHeight2 = 1.76;
-// Calculate both mark's BMIs using the formula
-const BMIMark = markMass / markHeight ** 2;
-const BMIJohn = johnMass / (johnHeight * johnHeight);
+// const johnMass = 92;
+// const johnHeight = 1.95;
+// const johnMass2 = 85;
+// const johnHeight2 = 1.76;
+// // Calculate both mark's BMIs using the formula
+// const BMIMark = markMass / markHeight ** 2;
+// const BMIJohn = johnMass / (johnHeight * johnHeight);
 
-const BMIMark2 = markMass2 / markHeight2 ** 2;
-const BMIJohn2 = johnMass2 / (johnHeight2 * johnHeight2);
-const markHeightBMI = BMIMark > BMIJohn;
+// const BMIMark2 = markMass2 / markHeight2 ** 2;
+// const BMIJohn2 = johnMass2 / (johnHeight2 * johnHeight2);
+// const markHeightBMI = BMIMark > BMIJohn;
 
 // Create a Boolean Variable 'markHigherBMI' containing info about whether
 // Mark has a high BMI than John
 
-console.log(BMIMark, BMIJohn, markHeightBMI);
+// console.log(BMIMark, BMIJohn, markHeightBMI);
 
 
 // coding challenge 2
@@ -32,19 +32,19 @@ console.log(BMIMark, BMIJohn, markHeightBMI);
     Mark's BMI is higher than John's! or John's BMI is higher than Mark's!
 */
 
-if (BMIMark > BMIJohn) {
-    console.log(`Mark's BMI is higher that John's`);
-} else {
-    console.log(`John's BMI is higher than Mark's!`);
-}
+// if (BMIMark > BMIJohn) {
+//     console.log(`Mark's BMI is higher that John's`);
+// } else {
+//     console.log(`John's BMI is higher than Mark's!`);
+// }
 
-// String Iteral
+// // String Iteral
 
-if (BMIMark2 > BMIJohn2){
-    console.log(`Mark's BMI (${BMIMark2}) is higher than John's BMI (${BMIJohn2})`);
-} else {
-    console.log(`Mark's BMI (${BMIMark2}) is lesser than John's BMI (${BMIJohn2})`);
-}
+// if (BMIMark2 > BMIJohn2){
+//     console.log(`Mark's BMI (${BMIMark2}) is higher than John's BMI (${BMIJohn2})`);
+// } else {
+//     console.log(`Mark's BMI (${BMIMark2}) is lesser than John's BMI (${BMIJohn2})`);
+// }
 
 
 /* Coding Challenge #3
@@ -69,10 +69,7 @@ Test data:
 § Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
 */
 
-//DATA 1 FOR DOLPHINS
-// const dolphinsScore1 = 96; 
-// const dolphinsScore2 = 108;
-// const dolphinsScore3 = 89;
+
 
 //DATA BONUS 1 FOR DOLPHINS
 // const dolphinsScore1 = 97; 
@@ -80,15 +77,12 @@ Test data:
 // const dolphinsScore3 = 101;
 
 //DATA BONUS 2 FOR DOLPHINS
-const dolphinsScore1 = 97;
-const dolphinsScore2 = 112;
-const dolphinsScore3 = 101;
+// const dolphinsScore1 = 97;
+// const dolphinsScore2 = 112;
+// const dolphinsScore3 = 101;
 
 
-//DATA 1 FOR KOALAS
-// const koalasScore1 = 88;
-// const koalasScore2 = 91;
-// const koalasScore3 = 110;
+
 
 
 //DATA BONUS 1 FOR KOALAS
@@ -98,41 +92,41 @@ const dolphinsScore3 = 101;
 
 
 ////DATA BONUS 2 FOR KOALAS
-const koalasScore1 = 109;
-const koalasScore2 = 95;
-const koalasScore3 = 106;
+// const koalasScore1 = 109;
+// const koalasScore2 = 95;
+// const koalasScore3 = 106;
 
 //1
-const dolphinsAverageScore = (dolphinsScore1 + dolphinsScore2 + dolphinsScore3) / 3;
-const koalasAverageScore = (koalasScore1 + koalasScore2 + koalasScore3) / 3;
+// const dolphinsAverageScore = (dolphinsScore1 + dolphinsScore2 + dolphinsScore3) / 3;
+// const koalasAverageScore = (koalasScore1 + koalasScore2 + koalasScore3) / 3;
 
-console.log(dolphinsAverageScore, koalasAverageScore);
+// console.log(dolphinsAverageScore, koalasAverageScore);
 
 //2
-if (dolphinsAverageScore > koalasAverageScore) {
-    console.log(`Dolphins with the average score of (${dolphinsAverageScore}) beats Koalas with a margin of (${dolphinsAverageScore - koalasAverageScore})`);
-} else if (dolphinsAverageScore === koalasAverageScore) {
-    console.log(`That was a tough competition because no one came first`);
-} else {
-    console.log(`Dolphins with the average score of (${dolphinsAverageScore}) couldn't beat Koalas average score of (${koalasAverageScore})`);
-}
+// if (dolphinsAverageScore > koalasAverageScore) {
+//     console.log(`Dolphins with the average score of (${dolphinsAverageScore}) beats Koalas with a margin of (${dolphinsAverageScore - koalasAverageScore})`);
+// } else if (dolphinsAverageScore === koalasAverageScore) {
+//     console.log(`That was a tough competition because no one came first`);
+// } else {
+//     console.log(`Dolphins with the average score of (${dolphinsAverageScore}) couldn't beat Koalas average score of (${koalasAverageScore})`);
+// }
 
 // BONUS Q1
-const minimumScore = 100;
+// const minimumScore = 100;
 /*Bonus 1: Include a requirement for a minimum score of 100. With this rule, a
 team only wins if it has a higher score than the other team, and the same time a
 score of at least 100 points. Hint: Use a logical operator to test for minimum
 score, as well as multiple else-if blocks */
 
-if (dolphinsAverageScore > koalasAverageScore && dolphinsAverageScore >= minimumScore){
-    console.log(`Dolphins are the greatest of all time`);
-} else if (dolphinsAverageScore > koalasAverageScore && dolphinsAverageScore != minimumScore){
-    console.log(`We will be waiting for you guys next season`);
-}else if (dolphinsAverageScore === koalasAverageScore){
-    console.log(`We will be waiting for you two next season`);
-} else {
-    console.log(`Give a BIG shouts to the KOALAS for becoming the GOAT champions`);
-}
+// if (dolphinsAverageScore > koalasAverageScore && dolphinsAverageScore >= minimumScore){
+//     console.log(`Dolphins are the greatest of all time`);
+// } else if (dolphinsAverageScore > koalasAverageScore && dolphinsAverageScore != minimumScore){
+//     console.log(`We will be waiting for you guys next season`);
+// }else if (dolphinsAverageScore === koalasAverageScore){
+//     console.log(`We will be waiting for you two next season`);
+// } else {
+//     console.log(`Give a BIG shouts to the KOALAS for becoming the GOAT champions`);
+// }
 
 
 /* Coding Challenge #4
@@ -153,8 +147,81 @@ Hints:
 § To calculate 20% of a value, simply multiply it by 20/100 = 0.2
 § Value X is between 50 and 300, if it's >= 50 && <= 300 */
 
-const bill = 275;
-const tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+// const bill = 275;
+// const tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
 
-console.log(`the bill was ${bill}, the tip was ${tip}, and the final value
-(${bill+ tip}).`);
+// console.log(`the bill was ${bill}, the tip was ${tip}, and the final value
+// (${bill+ tip}).`);
+
+
+
+
+
+
+/* JavaScript Fundamentals – Part 2
+Coding Challenge #1
+Back to the two gymnastics teams, the Dolphins and the Koalas! There is a new
+gymnastics discipline, which works differently.
+Each team competes 3 times, and then the average of the 3 scores is calculated (so
+one average score per team).
+A team only wins if it has at least double the average score of the other team.
+Otherwise, no team wins!
+Your tasks:
+1. Create an arrow function 'calcAverage' to calculate the average of 3 scores
+2. Use the function to calculate the average for both teams
+3. Create a function 'checkWinner' that takes the average score of each team
+as parameters ('avgDolhins' and 'avgKoalas'), and then logs the winner
+to the console, together with the victory points, according to the rule above.
+Example: "Koalas win (30 vs. 13)"
+4. Use the 'checkWinner' function to determine the winner for both Data 1 and
+Data 2
+5. Ignore draws this time
+Test data:
+§ Data 1: Dolphins score 44, 23 and 71. Koalas score 65, 54 and 49
+§ Data 2: Dolphins score 85, 54 and 41. Koalas score 23, 34 and 27
+Hints:
+§ To calculate average of 3 values, add them all together and divide by 3
+§ To check if number A is at least double number B, check for A >= 2 * B.
+Apply this to the team's average scores �
+GOOD LUCK  */
+
+
+//DATA 1 FOR DOLPHINS
+const dolphinsScore1 = 44; 
+const dolphinsScore2 = 23;
+const dolphinsScore3 = 71;
+
+
+//DATA 1 FOR KOALAS
+const koalasScore1 = 65;
+const koalasScore2 = 54;
+const koalasScore3 = 49;
+
+// Create an arrow function 'calcAverage' to calculate the average of 3 scores
+const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
+const dolphinsAverage = calcAverage(dolphinsScore1, dolphinsScore2, dolphinsScore3);
+console.log("dolphinsAverage", dolphinsAverage);
+
+
+const koalasAverage = calcAverage(koalasScore1, koalasScore2, koalasScore3);
+console.log("koalasAverage", koalasAverage);
+
+// Create a function 'checkWinner' that takes the average score of each team
+// as parameters ('avgDolhins' and 'avgKoalas'), and then logs the winner
+// to the console, together with the victory points, according to the rule above.
+// Example: "Koalas win (30 vs. 13)"
+
+const checkWinner = (avgDolhins, avgKoalas) => {
+
+    if(avgDolhins >= 2 * avgKoalas){
+        return `Dolphins win (${avgDolhins} vs. ${avgKoalas})`;
+    } else if(avgKoalas >= 2 * avgDolhins){
+        return `Koalas win (${avgKoalas} vs. ${avgDolhins})`;
+    } else{
+        return `no team wins!`;
+    }
+
+}
+
+const winner = checkWinner(100, 200);
+console.log(winner);

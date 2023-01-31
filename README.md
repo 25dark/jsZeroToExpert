@@ -41,3 +41,6 @@ const calcAge = function (birthYear) {
 Arrow function - great for a quick one-line functions. Has no this keyword
 
 const calcAge = birthYear => 2037 - birthYear;
+
+
+ARRAYS

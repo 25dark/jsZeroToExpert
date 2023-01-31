@@ -223,5 +223,5 @@ const checkWinner = (avgDolhins, avgKoalas) => {
 
 }
 
-const winner = checkWinner(100, 200);
+const winner = checkWinner(dolphinsAverage, koalasAverage);
 console.log(winner);

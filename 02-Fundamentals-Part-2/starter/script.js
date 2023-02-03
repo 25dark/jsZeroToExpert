@@ -67,23 +67,60 @@
 // console.log(fruitProcessor(2, 3));
 
 
-const calAge = function (birthyear) {
-    return 2037 - birthyear;
-}
+// const calAge = function (birthyear) {
+//     return 2037 - birthyear;
+// }
 
-const yearsUntilRetirement = function (birthyear, firstname) {
-    const age = calAge(birthyear)
-    const retirement = 65 - age;
+// const yearsUntilRetirement = function (birthyear, firstname) {
+//     const age = calAge(birthyear)
+//     const retirement = 65 - age;
 
-    if (retirement > 0) {
-        console.log(`${firstname} retires in ${retirement} years`)
-        return retirement;
-    } else {
-        console.log(`${firstname} has already retired`)
-        return -1;
-    }
+//     if (retirement > 0) {
+//         console.log(`${firstname} retires in ${retirement} years`)
+//         return retirement;
+//     } else {
+//         console.log(`${firstname} has already retired`)
+//         return -1;
+//     }
 
-}
+// }
 
-console.log(yearsUntilRetirement(1997, 'Yaw'));
-console.log(yearsUntilRetirement(1967, 'Padmore'));
+// console.log(yearsUntilRetirement(1997, 'Yaw'));
+// console.log(yearsUntilRetirement(1967, 'Padmore'));
+
+// const jonas = {
+//     firstName: 'Jonas',
+//     lastName: 'Schmedtmann',
+//     age: 2037 - 1991,
+//     job: 'teacher',
+//     friends: ['Michael', 'Peter', 'Steve']
+// };
+
+// console.log(jonas['friends'][0]);
+// console.log(jonas);
+
+// console.log(jonas.lastName);
+// console.log(jonas['lastName']);
+
+// const nameKey = 'Name';
+// console.log(jonas['first' + nameKey]);
+// console.log(jonas['last' + nameKey]);
+
+// console.log(jonas.'first' + nameKey);
+
+// const interestedIn = prompt('What do you want to know about Jonas?' +
+//     'Choose between firstName, lastName, age, job, and friends');
+
+// if (jonas[interestedIn]) {
+//     console.log(jonas[interestedIn])
+// } else {
+//     console.log('Wrong request! Choose between firstName, lastName, age, job, and friends');
+// }
+
+
+// jonas.location = 'Portugal';
+// jonas['twitter'] = '@jonasschmedtman';
+// console.log(jonas);
+
+// console.log(`${jonas.firstName} has ${jonas['friends'].length} friends, and his best friend is called ${jonas['friends'][0]}`);
+

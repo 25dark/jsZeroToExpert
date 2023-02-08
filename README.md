@@ -47,3 +47,4 @@ ARRAYS
 
 OBJECTS
 
+If a function is attached to an object, it's called a method.

@@ -255,22 +255,50 @@ values (so don't store the tip values in separate variables first, but right in 
 array) */
 
 
-function calcTip (bill) {
-    return  bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
-}
-const calcTotal = calcTip(100);
-console.log(calcTotal);
+// function calcTip (bill) {
+//     return  bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+// }
+// const calcTotal = calcTip(100);
+// console.log(calcTotal);
 
-const bills = [125, 555, 44];
+// const bills = [125, 555, 44];
 
-function billLoop (bills) {
-    let newArray = [];
-    for(let i = 0; i < bills.length; i++){
+// function billLoop (bills) {
+//     let newArray = [];
+//     for(let i = 0; i < bills.length; i++){
         
-         newArray.push(calcTip(bills[i]));
+//          newArray.push(calcTip(bills[i]));
         
-    }
-    return newArray;
-}
-const tips = billLoop(bills);
-console.log(tips);
+//     }
+//     return newArray;
+// }
+// const tips = billLoop(bills);
+// console.log(tips);
+
+/* write a menthod called getSummary 
+which should return a string which 
+should summarize the data about jonas 
+
+"Jonas is a 46-years old teacher, and he has a
+driver's license"
+*/
+
+const jonas = {
+        firstName: 'Jonas',
+        lastName: 'Schmedtmann',
+        birthyear: 1991,
+        job: 'teacher',
+        friends: ['Michael', 'Peter', 'Steve'],
+        driversLicense: true,
+
+        calcAge: function (birthyear) {
+            return 2037 - this.birthyear;
+        },
+
+        getSummary: function(){
+            return `${this.firstName} is a ${this.calcAge()}-years old ${this.job}, and he has ${this.driversLicense ? 'a' : 'no'} driver's license`;                      
+        }
+
+    };
+
+    console.log(jonas.getSummary());

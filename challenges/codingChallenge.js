@@ -320,30 +320,30 @@ respective BMI. Example: "John's BMI (28.3) is higher than Mark's (23.9)!"
 Test data: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m
 tall. */
 
-const mark = {
-    fullname: "Mark Miller",
-    mass: 78,
-    height: 1.69,
-    calcBMI: function (){
-        this.bmi = this.mass / this.height ** 2;
-        return this.bmi;
-    }
-}
+// const mark = {
+//     fullname: "Mark Miller",
+//     mass: 78,
+//     height: 1.69,
+//     calcBMI: function (){
+//         this.bmi = this.mass / this.height ** 2;
+//         return this.bmi;
+//     }
+// }
 
 
-const john = {
-    fullname: "John Smith",
-    mass: 78,
-    height: 1.69,
-    calcBMI: function (){
-        this.bmi = this.mass / this.height ** 2;
-        return this.bmi;
-    }
-}
+// const john = {
+//     fullname: "John Smith",
+//     mass: 78,
+//     height: 1.69,
+//     calcBMI: function (){
+//         this.bmi = this.mass / this.height ** 2;
+//         return this.bmi;
+//     }
+// }
 
-mark.calcBMI();
-john.calcBMI()
+// mark.calcBMI();
+// john.calcBMI()
 
-console.log(mark.bmi, john.bmi);
+// console.log(mark.bmi, john.bmi);
 
 // console.log(`${mark.mass > john.mass ? 'Mark Miller' : 'John Smith'} BMI (${mark.bmi}) is ${mark.mass > john.mass ? 'higher' : 'lower'} than ${john.fullname} (${john.bmi})!`);

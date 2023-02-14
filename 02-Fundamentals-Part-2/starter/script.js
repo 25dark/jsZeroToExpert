@@ -163,10 +163,26 @@
 
 // LOOP IN A LOOP
 
-for (let i = 1; i < 4; i++) {
-    console.log(`--- STARTING EXCERCISE ${i} ---`);
+// for (let i = 1; i < 4; i++) {
+//     console.log(`--- STARTING EXERCISE ${i} ---`);
 
-    for (let work = 1; work < 6; work++) {
-        console.log(`--- workout day ${work} 🚴 ---`);
-    }
+//     for (let work = 1; work < 6; work++) {
+//         console.log(`--- workout day ${work} 🚴 ---`);
+//     }
+// }
+
+//WHILE LOOP
+
+// let work = 1;
+// while (work <= 6) {
+//     console.log(`--- workout day ${work} 🚴 ---`);
+//     work++;
+// }
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+
+while (dice !== 6) {
+    console.log(`You rolled a ${dice}`);
+    dice = Math.trunc(Math.random() * 6) + 1;
+    if (dice === 6) console.log('Loop is about to end...');
 }

@@ -125,38 +125,48 @@
 // console.log(`${jonas.firstName} has ${jonas['friends'].length} friends, and his best friend is called ${jonas['friends'][0]}`);
 
 
-const jonas = [
-    'Jonas',
-    'Schmedtmann',
-    2037 - 1991,
-    'teacher',
-    ['Michael', 'Peter', 'Steve']
-];
+// const jonas = [
+//     'Jonas',
+//     'Schmedtmann',
+//     2037 - 1991,
+//     'teacher',
+//     ['Michael', 'Peter', 'Steve']
+// ];
 
 
-const years = [1991, 2007, 1969, 2020];
-const ages = [];
+// const years = [1991, 2007, 1969, 2020];
+// const ages = [];
 
-for (let i = 0; i < years.length; i++) {
-    ages.push(2037 - years[i]);
-}
-console.log(ages);
+// for (let i = 0; i < years.length; i++) {
+//     ages.push(2037 - years[i]);
+// }
+// console.log(ages);
 
-console.log('--- ONLY NUMBER ---')
-for (let i = 0; i < jonas.length; i++) {
-    if (typeof jonas[i] !== 'string') continue;
+// console.log('--- ONLY NUMBER ---')
+// for (let i = 0; i < jonas.length; i++) {
+//     if (typeof jonas[i] !== 'string') continue;
 
-    console.log(jonas[i], typeof jonas[i]);
-}
+//     console.log(jonas[i], typeof jonas[i]);
+// }
 
-console.log('--- BREAK WITH NUMBER ---')
-for (let i = 0; i < jonas.length; i++) {
-    if (typeof jonas[i] === 'number') break;
-    console.log(jonas[i], typeof jonas[i]);
-}
+// console.log('--- BREAK WITH NUMBER ---')
+// for (let i = 0; i < jonas.length; i++) {
+//     if (typeof jonas[i] === 'number') break;
+//     console.log(jonas[i], typeof jonas[i]);
+// }
 
-//LOOPING BACKWARKS
+// //LOOPING BACKWARKS
 
-for (let i = jonas.length; i >= 0; i--) {
-    console.log(i, jonas[i]);
+// for (let i = jonas.length; i >= 0; i--) {
+//     console.log(i, jonas[i]);
+// }
+
+// LOOP IN A LOOP
+
+for (let i = 1; i < 4; i++) {
+    console.log(`--- STARTING EXCERCISE ${i} ---`);
+
+    for (let work = 1; work < 6; work++) {
+        console.log(`--- workout day ${work} 🚴 ---`);
+    }
 }

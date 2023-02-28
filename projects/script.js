@@ -1,12 +1,25 @@
 "use strict";
 const btnKeys = document.querySelectorAll(".calculator__key");
 window.addEventListener("load", function () {
-  // display the value of the calculator__key when clicked
-  // add 2 numbers
+  // limit amount of characters to 9
+  // only include numbers
+  // if the textContent = AC, set input to zero
+  let input = "";
+
   for (let i = 0; i < btnKeys.length; i++) {
+    console.log(btnKeys[i].textContent);
     btnKeys[i].addEventListener("click", function () {
-      document.querySelector(".calculator__output").textContent =
-        btnKeys[i].textContent;
+      // console.log(btnKeys[i].textContent);
+
+      if (input.length < 9) {
+        input += btnKeys[i].textContent;
+        console.log(input);
+      }
+      if (btnKeys[i].textContent === "AC") {
+        input = "0";
+        input = "";
+      }
+      document.querySelector(".calculator__output").textContent = input;
     });
   }
 });

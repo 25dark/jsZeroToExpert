@@ -1,0 +1,7 @@
+// display the value of the calculator__key when clicked
+// save clicked numbers in a variable
+// append to the variable every clicked number
+// set the (".calculator__output").textContent to the strigify array of numbers
+// limit amount of characters to 9
+// only include numbers
+// if the textContent = AC, set input to zero

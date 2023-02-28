@@ -17,7 +17,6 @@ window.addEventListener("load", function () {
       }
       if (btnKeys[i].textContent === "AC") {
         input = "0";
-        input = "";
       }
       document.querySelector(".calculator__output").textContent = input;
     });

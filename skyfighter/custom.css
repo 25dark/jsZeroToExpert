@@ -1,0 +1,8 @@
+.player {
+  position: absolute;
+  bottom: 0;
+}
+
+.player img {
+  height: 100px;
+}

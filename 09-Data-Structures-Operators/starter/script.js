@@ -41,51 +41,107 @@ const restaurant = {
       `Order received! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`
     );
   },
+
+  orderPasta: function (ing1, ing2, ing3) {
+    console.log(`Here is your delicious pasta with ${ing1}, ${ing2}, ${ing3}`);
+  },
 };
-// restaurant.orderDelivery(2, 1, '22:30', 'Via del Sole, 21');
 
-restaurant.orderDelivery({
-  time: '22:30',
-  address: 'Via del Sole, 21',
-  mainIndex: 2,
-  starterIndex: 2,
-});
+// The Spread  Operator
 
-restaurant.orderDelivery({
-  address: 'Via del Sole, 21',
-  starterIndex: 1,
-});
-// Restuarant Destructuring
+const arr = [7, 8, 9];
+// incase you want to add 1 and 2 to the beginning of arr array
+const badNewArr = [1, 2, arr[0], arr[1], arr[2]];
+console.log(badNewArr);
 
-const { name, openingHours, categories } = restaurant;
-console.log(name, openingHours, categories);
+// using the spread operator
+const newArr = [1, 2, ...arr];
+// if we were to write it without the 3 dots, we would have an array inside an array
+console.log(newArr);
 
-const {
-  name: restaurantName,
-  openingHours: hours,
-  categories: tags,
-} = restaurant;
+// whenever we need the individual elements of an array, we use the spread operator
+console.log(...newArr);
 
-console.log(restaurantName, hours, tags);
+const newMenu = [...restaurant.mainMenu, 'chips'];
+console.log(newMenu);
 
-// default values on apis
+// Copy array
 
-const { menu = [], starterMenu: starters = [] } = restaurant;
-console.log(menu, starters);
+const mainMenuCopy = [...restaurant.mainMenu];
 
-// mutating variables
+// Join 2 array
 
-let a = 111;
-let b = 999;
-const obj = { a: 23, b: 7, c: 14 };
-({ a, b } = obj);
-console.log(a, b);
+const menu = [...restaurant.mainMenu, ...restaurant.starterMenu];
+console.log(menu);
 
-//Nested objects
-const {
-  fri: { open: o, close: c },
-} = openingHours;
-console.log(o, c);
+// iterable are arrays, stringm maps, sets. Not objects
+const str = 'Jonas';
+const letters = [...str, ' ', 'S.'];
+console.log(letters);
+
+//Real-World examples
+
+const ingredients = [
+  prompt("Let's make pasta! Ingredient 1?"),
+  prompt("Let's make pasta! Ingredient 2?"),
+  prompt("Let's make pasta! Ingredient 3?"),
+];
+
+console.log(ingredients);
+restaurant.orderPasta(ingredients[0], ingredients[2], ingredients[2]);
+restaurant.orderPasta(...ingredients);
+
+// Objects
+
+const newRestaurant = { foundedIn: 1998, ...restaurant, founder: 'Guiseppe' };
+console.log(newRestaurant);
+
+const restaurantCopy = { ...restaurant };
+restaurantCopy.name = 'Ristorante Roma';
+console.log(restaurantCopy);
+console.log(restaurant.name);
+// restaurant.orderDelivery({
+//   time: '22:30',
+//   address: 'Via del Sole, 21',
+//   mainIndex: 2,
+//   starterIndex: 2,
+// });
+
+// restaurant.orderDelivery({
+//   address: 'Via del Sole, 21',
+//   starterIndex: 1,
+// });
+// // Restuarant Destructuring
+
+// const { name, openingHours, categories } = restaurant;
+// console.log(name, openingHours, categories);
+
+// const {
+//   name: restaurantName,
+//   openingHours: hours,
+//   categories: tags,
+// } = restaurant;
+
+// console.log(restaurantName, hours, tags);
+
+// // default values on apis
+
+// const { menu = [], starterMenu: starters = [] } = restaurant;
+// console.log(menu, starters);
+
+// // mutating variables
+
+// let a = 111;
+// let b = 999;
+// const obj = { a: 23, b: 7, c: 14 };
+// ({ a, b } = obj);
+// console.log(a, b);
+
+// //Nested objects
+// const {
+//   fri: { open: o, close: c },
+// } = openingHours;
+// console.log(o, c);
 
 /*
 ////////////////////////////////////////////////////////

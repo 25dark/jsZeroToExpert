@@ -47,6 +47,15 @@ const restaurant = {
   },
 };
 
+// Spresd, because on the Right side of =
+
+const arr = [1, 2, ...[3, 4]];
+
+//REST, because on the LEFT side of =
+const [a, b, ...others] = [1, 2, 3, 4, 5];
+console.log(a, b, others);
+/*
+//////////////////////////////////////////////////////////////
 // The Spread  Operator
 
 const arr = [7, 8, 9];

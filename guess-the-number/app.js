@@ -5,4 +5,8 @@
 // if guess is true
 // you entered 4 guesses
 
-let guess = prompt("Enter a number");
+let maximum = parseInt(prompt("Enter a number"));
+
+let guess = prompt("Enter your guess");
+
+const targetNumber = Math.floor(Math.random() * max) + 1;

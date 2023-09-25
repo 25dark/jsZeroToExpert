@@ -7,6 +7,18 @@
 
 let maximum = parseInt(prompt("Enter a number"));
 
+while (!maximum) {
+  maximum = parseInt(prompt("Enter a valid number"));
+}
+
+const targetNumber = Math.floor(Math.random() * maximum) + 1;
+
 let guess = prompt("Enter your guess");
 
-const targetNumber = Math.floor(Math.random() * max) + 1;
+if (guess > targetNumber) {
+  guess = prompt("Too high enter your guess again");
+} else {
+  guess = prompt("Too low enter your guess again");
+}
+
+console.log(targetNumber);

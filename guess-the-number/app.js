@@ -5,7 +5,7 @@
 // if guess is true
 // you entered 4 guesses
 
-let maximum = parseInt(prompt("Enter a number"));
+let maximum = parseInt(prompt("Enter the maximum number"));
 
 while (!maximum) {
   maximum = parseInt(prompt("Enter a valid number"));
@@ -13,12 +13,17 @@ while (!maximum) {
 
 const targetNumber = Math.floor(Math.random() * maximum) + 1;
 
-let guess = prompt("Enter your guess");
+let guess = prompt("Enter your first guess");
 
-if (guess > targetNumber) {
-  guess = prompt("Too high enter your guess again");
-} else {
-  guess = prompt("Too low enter your guess again");
+while (parseInt(guess) !== targetNumber) {
+  if (guess > targetNumber) {
+    guess = prompt("Too high enter your guess again");
+  } else {
+    guess = prompt("Too low enter your guess again");
+  }
+  if (guess === targetNumber) {
+    console.log(`you guessed ${guess} times`);
+  }
 }
 
 console.log(targetNumber);

@@ -15,15 +15,22 @@ const targetNumber = Math.floor(Math.random() * maximum) + 1;
 
 let guess = prompt("Enter your first guess");
 
+let attempts = 1;
+
 while (parseInt(guess) !== targetNumber) {
+  if (guess === "q") break;
+  attempts++;
   if (guess > targetNumber) {
     guess = prompt("Too high enter your guess again");
   } else {
     guess = prompt("Too low enter your guess again");
   }
-  if (guess === targetNumber) {
-    console.log(`you guessed ${guess} times`);
-  }
+}
+if (guess === "q") {
+  console.log("Ok, You Quit");
+} else {
+  console.log("congrats you won");
+  console.log(`you guessed ${attempts} times`);
 }
 
 console.log(targetNumber);

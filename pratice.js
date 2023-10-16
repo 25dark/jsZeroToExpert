@@ -43,18 +43,30 @@
 // // Log the new array
 // console.log(formattedMovies);
 
-setTimeout(() => {
-  console.log("Hello Bigman");
-}, 2000);
+// setTimeout(() => {
+//   console.log("Hello Bigman");
+// }, 2000);
 
-setTimeout(() => {
-  console.log("I'm currently learning some great stuff");
-}, 4000);
+// setTimeout(() => {
+//   console.log("I'm currently learning some great stuff");
+// }, 4000);
 
-setTimeout(() => {
-  console.log("and very soon i will implement them");
-}, 6000);
+// setTimeout(() => {
+//   console.log("and very soon i will implement them");
+// }, 6000);
 
-setTimeout(() => {
-  console.log("WooHoo... Crazy Stuff");
-}, 10000);
+// setTimeout(() => {
+//   console.log("WooHoo... Crazy Stuff");
+// }, 10000);
+
+// FILTER
+
+// Let's get some practice using the filter method. Write a function called validUserNames that accepts an array of usernames (strings).
+// It should return a new array, containing only the usernames that are less than 10 characters. For example:
+
+// validUserNames(['mark', 'staceysmom1978', 'q29832128238983', 'carrie98', 'MoanaFan']);
+// => ["mark", "carrie98", "MoanaFan"]
+
+function validUserNames(usernames) {
+  return usernames.filter((usernames) => usernames.length < 10);
+}

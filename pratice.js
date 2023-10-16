@@ -42,3 +42,19 @@
 
 // // Log the new array
 // console.log(formattedMovies);
+
+setTimeout(() => {
+  console.log("Hello Bigman");
+}, 2000);
+
+setTimeout(() => {
+  console.log("I'm currently learning some great stuff");
+}, 4000);
+
+setTimeout(() => {
+  console.log("and very soon i will implement them");
+}, 6000);
+
+setTimeout(() => {
+  console.log("WooHoo... Crazy Stuff");
+}, 10000);

@@ -67,6 +67,33 @@
 // validUserNames(['mark', 'staceysmom1978', 'q29832128238983', 'carrie98', 'MoanaFan']);
 // => ["mark", "carrie98", "MoanaFan"]
 
-function validUserNames(usernames) {
-  return usernames.filter((usernames) => usernames.length < 10);
-}
+// function validUserNames(usernames) {
+//   return usernames.filter((usernames) => usernames.length < 10);
+// }
+
+// Some/Every Exercise
+// Define a function called allEvens that accepts a single array of numbers.  If the array contains all even numbers, return true.
+// Otherwise, return false.  Use some or every to help you do this!  (only one of them is actually useful here)
+
+// allEvens([2,4,6,8]) //true
+// allEvens([1,4,6,8]) //false
+// allEvens([1,2,3]) //false
+
+// function allEvens(arr){
+//   return arr.every(arr => arr % 2 === 0)
+//   }
+
+const user = {
+  email: "henrydanso6@gmail.com",
+  firstName: "Henry",
+  lastName: "Danso",
+  born: 1997,
+  city: "Accra",
+  state: "Santa Maria",
+};
+
+// const fullName = function (user) {
+//   return ({ email, firstName, lastName, born, city, state } = user);
+// };
+
+// console.log(email);

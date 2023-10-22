@@ -92,8 +92,7 @@ const user = {
   state: "Santa Maria",
 };
 
-// const fullName = function (user) {
-//   return ({ email, firstName, lastName, born, city, state } = user);
-// };
-
-// console.log(email);
+const fullName = function (user) {
+  const { email, firstName, lastName, born, city, state } = user;
+  return `${firstName} ${lastName} ${email}`;
+};

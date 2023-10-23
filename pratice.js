@@ -96,3 +96,7 @@ const fullName = function (user) {
   const { email, firstName, lastName, born, city, state } = user;
   return `${firstName} ${lastName} ${email}`;
 };
+
+const p = document.querySelector("p");
+
+p.append("I am a new text");

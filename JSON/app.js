@@ -19,6 +19,7 @@ const jokeText = async () => {
 
 const getDadJoke = async () => {
   try {
+    const button = document.querySelector("#button");
     const config = { headers: { Accept: "application/json" } };
     const res = await axios.get("https://icanhazdadjoke.com/");
     return res.data.joke;

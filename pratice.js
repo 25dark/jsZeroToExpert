@@ -83,6 +83,8 @@
 //   return arr.every(arr => arr % 2 === 0)
 //   }
 
+const colors = require("colors");
+
 const user = {
   email: "henrydanso6@gmail.com",
   firstName: "Henry",

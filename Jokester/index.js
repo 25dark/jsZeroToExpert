@@ -1,3 +1,3 @@
-const joke = require("give-me-a-joke");
+const jokes = require("give-me-a-joke");
 
-console.dir(joke);
+console.dir(jokes);

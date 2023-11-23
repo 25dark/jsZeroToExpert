@@ -7,15 +7,15 @@ const app = express();
 // });
 
 app.get("/", (req, res) => {
-  app.send("<h1>This is the homepage</h1>");
+  res.send("<h1>This is the homepage</h1>");
 });
 
 app.get("/dogs", (req, res) => {
-  app.send("Dog page");
+  res.send("Dog page");
 });
 
 app.get("/cats", (req, res) => {
-  app.send("cat page");
+  res.send("cat page");
 });
 // /cats => 'meow'
 // /dogs => 'woof'

@@ -3,7 +3,7 @@ const app = express();
 
 app.use((req, res) => {
   console.log("WE GOT A NEW REQUEST");
-  console.log("HELLO WE GOT YOUR REQUEST, THIS IS A RESPONSE");
+  res.send("<h1>This is my header</h1>");
 });
 
 app.listen(3000, () => {

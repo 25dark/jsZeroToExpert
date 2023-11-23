@@ -10,6 +10,10 @@ app.get("/", (req, res) => {
   res.send("<h1>This is the homepage</h1>");
 });
 
+app.get("/r/:subrredit", (req, res) => {
+  res.send("This is a subreddit");
+});
+
 app.get("/dogs", (req, res) => {
   res.send("Dog page");
 });

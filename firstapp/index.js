@@ -11,6 +11,11 @@ app.get("/", (req, res) => {
 });
 
 app.get("/r/:subrredit", (req, res) => {
+  const subreddit = req.log;
+  res.send(`This is a ${subreddit} subreddit`);
+});
+
+app.get("/r/:subrredit/:postid", (req, res) => {
   res.send("This is a subreddit");
 });
 

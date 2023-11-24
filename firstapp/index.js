@@ -15,9 +15,9 @@ app.get("/r/:subreddit", (req, res) => {
   res.send(`This is a ${subreddit} subreddit`);
 });
 
-// app.get("/r/:subrredit/:postid", (req, res) => {
-//   res.send("This is a subreddit");
-// });
+app.get("/r/:subreddit/:postId", (req, res) => {
+  res.send(`Viewing the ${postId} the ${subreddit}`);
+});
 
 app.get("/dogs", (req, res) => {
   res.send("Dog page");

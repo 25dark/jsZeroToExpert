@@ -10,7 +10,7 @@ app.get("/", (req, res) => {
   res.send("<h1>This is the homepage</h1>");
 });
 
-app.get("/r/:subrredit", (req, res) => {
+app.get("/r/:subreddit", (req, res) => {
   const { subreddit } = req.params;
   res.send(`This is a ${subreddit} subreddit`);
 });

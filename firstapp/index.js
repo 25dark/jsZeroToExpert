@@ -16,6 +16,7 @@ app.get("/r/:subreddit", (req, res) => {
 });
 
 app.get("/r/:subreddit/:postId", (req, res) => {
+  const { subreddit, postId } = req.params;
   res.send(`Viewing the ${postId} the ${subreddit}`);
 });
 

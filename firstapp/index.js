@@ -28,6 +28,10 @@ app.get("/cats", (req, res) => {
   res.send("cat page");
 });
 
+app.get("/search", (req, res) => {
+  console.log(req.query);
+  console.log("hi");
+});
 // this must come at the bottom always
 
 app.get("*", (req, res) => {

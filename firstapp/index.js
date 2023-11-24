@@ -30,6 +30,9 @@ app.get("/cats", (req, res) => {
 
 app.get("/search", (req, res) => {
   const { q } = req.query;
+  if (!q) {
+    res.send("Nothing found if nothing searched");
+  }
   res.send(`search result of ${q}`);
 });
 // this must come at the bottom always

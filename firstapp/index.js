@@ -29,8 +29,8 @@ app.get("/cats", (req, res) => {
 });
 
 app.get("/search", (req, res) => {
-  console.log(req.query);
-  console.log("hi");
+  const { q } = req.query;
+  console.log(`search result of ${q}`);
 });
 // this must come at the bottom always
 

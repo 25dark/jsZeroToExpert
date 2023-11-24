@@ -30,7 +30,7 @@ app.get("/cats", (req, res) => {
 
 app.get("/search", (req, res) => {
   const { q } = req.query;
-  console.log(`search result of ${q}`);
+  res.send(`search result of ${q}`);
 });
 // this must come at the bottom always
 

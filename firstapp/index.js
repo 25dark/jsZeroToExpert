@@ -7,7 +7,7 @@ const app = express();
 // });
 
 app.get("/", (req, res) => {
-  res.send("<h1>This is the homepage</h1>");
+  res.send("<h1>Welcome to the homepage</h1>");
 });
 
 app.get("/r/:subreddit", (req, res) => {

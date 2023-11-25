@@ -5,6 +5,7 @@
 // Initialize an empty array to store the todo list items
 let lists = [];
 
+
 // Prompt the user to enter their first command
 let input = prompt("Enter your commands");
 
